@@ -2,9 +2,9 @@ import firebase from '@firebase/app';
 import '@firebase/firestore';
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyDQYvOCniSSN-CeyIbeWZ72nxT52zMNBp0',
-  authDomain: 'zrr31085l3.codesandbox.io',
-  projectId: 'lovejs-emocipher'
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID
 });
 
 const db = firebase.firestore();
